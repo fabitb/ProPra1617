@@ -10,6 +10,15 @@ public class Bank {
     private BankAccountList accounts;
 
     public int newAccount (String firstname, String lastname){
+        if (accounts == null){
+            accounts = new BankAccountList();
+            accounts.info = new BankAccount(1, firstname, lastname);
+            accounts.next = null;
+            return 1;
+        }
+        else{
+            
+        }
 
     }
 
