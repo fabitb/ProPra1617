@@ -37,35 +37,34 @@ public class SymmetricStack {
 
     public int getNumberOfElements() {
         if (first != -1){
-            int i = first;
-            int out = 1;
-            while (i != last){
-                out ++;
-                i = (i + 1) % data.length;
+            if (first <= last){
+                return (last - first) + 1;
             }
-            return out;
+            else{
+                return (data.length - first) + (last + 1);
+            }
         }
         return 0;
     }
 
     public void increase() {
         if (isFull()){
-            int[] newData = new int[data.length * 2];
-            int _first = data.length / 2;
+            int[] newData = new int[data.length * 2]; // create new double-sized Stack
+            int _first = data.length / 2; // first index of new array
             int j = _first;
-            int _last = _first + data.length - 1;
 
-            int i = first;
+//            int i = first;
+//
+//            for (int counter = 0; counter < data.length ; counter++){
+//                newData[j] = data[i];
+//                j++;
+//                i = (i + 1) % data.length;
+//            }
 
-            for (int counter = 0; counter < data.length ; counter++){
-                newData[j] = data[i];
-                j++;
-                i = (i + 1) % data.length;
-            }
 
+            setLast(_first + data.length - 1);
             setData(newData);
             setFirst(_first);
-            setLast(_last);
         }
     }
 
@@ -73,7 +72,6 @@ public class SymmetricStack {
         if (getNumberOfElements() <= data.length / 4){
             int[] newData = new int[data.length / 2];
             int _first = data.length / 8;
-            int _last = _first + getNumberOfElements() - 1;
 
             int j = _first;
             int i = first;
@@ -84,9 +82,10 @@ public class SymmetricStack {
                 i = (i + 1) % data.length;
             }
 
+            setLast(_first + getNumberOfElements() - 1);
             setData(newData);
             setFirst(_first);
-            setLast(_last);
+
         }
     }
 
@@ -125,13 +124,23 @@ public class SymmetricStack {
     }
 
     public void removeFirst() {
-        setFirst((first + 1) % data.length);
-        decrease();
+        if (getNumberOfElements() == 1){
+            setFirst(-1);
+        }
+        else {
+            setFirst((first + 1) % data.length);
+            decrease();
+        }
     }
 
     public void removeLast() {
-        setLast((last - 1) % data.length);
-        decrease();
+        if (getNumberOfElements() == 1) {
+            setLast(-1);
+        }
+        else{
+            setLast((last - 1) % data.length);
+            decrease();
+        }
     }
 
     @Override
@@ -159,8 +168,6 @@ public class SymmetricStack {
         ss.setData(new int[]{1,-1,-1,-1,-1,-1,-1,-1,-1,10});
         ss.setFirst(9);
         ss.setLast(0);
-        System.out.println(ss.toString());
-        ss.removeFirst();
-        System.out.println(ss.toString());
+        System.out.println(ss.getNumberOfElements());
     }
 }

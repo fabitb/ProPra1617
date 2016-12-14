@@ -17,7 +17,7 @@ public class Bank {
             return 1;
         }
         else{
-
+            return 0;
         }
 
     }
@@ -27,14 +27,17 @@ public class Bank {
     }
 
     public Money getBalance(int accountnumber){
+        return null;
 
     }
 
     public boolean depositOrWithdraw(int accountnumber, Money m){
+        return true;
 
     }
 
     public boolean transfer (int from, int to, Money m){
+        return true;
 
     }
 }
