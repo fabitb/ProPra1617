@@ -52,16 +52,12 @@ public class SymmetricStack {
             int[] newData = new int[data.length * 2]; // create new double-sized Stack
             int _first = data.length / 2; // first index of new array
             int j = _first;
-
-//            int i = first;
-//
-//            for (int counter = 0; counter < data.length ; counter++){
-//                newData[j] = data[i];
-//                j++;
-//                i = (i + 1) % data.length;
-//            }
-
-
+            int i = first;
+            for (int counter = 0; counter < data.length ; counter++){
+                newData[j] = data[i];
+                j++;
+                i = (i + 1) % data.length;
+            }
             setLast(_first + data.length - 1);
             setData(newData);
             setFirst(_first);
@@ -72,20 +68,16 @@ public class SymmetricStack {
         if (getNumberOfElements() <= data.length / 4){
             int[] newData = new int[data.length / 2];
             int _first = data.length / 8;
-
             int j = _first;
             int i = first;
-
             for (int counter = 0; counter <= getNumberOfElements(); counter ++){
                 newData[j] = data[i];
                 j++;
                 i = (i + 1) % data.length;
             }
-
             setLast(_first + getNumberOfElements() - 1);
             setData(newData);
             setFirst(_first);
-
         }
     }
 
@@ -101,7 +93,7 @@ public class SymmetricStack {
         if (isEmpty()){
             setFirst(data.length / 2);
             setLast(first);
-            prepend(x);
+            data[first] = x;
         }
         else{
             increase();
@@ -114,7 +106,7 @@ public class SymmetricStack {
         if (isEmpty()){
             setFirst(data.length / 2);
             setLast(first);
-            append(x);
+            data[last] = x;
         }
         else{
             increase();
