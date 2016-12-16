@@ -90,11 +90,14 @@ public class SymmetricStack {
     }
 
     public void prepend(int x) {
+        // Wenn Stack leer, dann first und last neu setzen und x an dieser Stelle einfügen
         if (isEmpty()){
             setFirst(data.length / 2);
             setLast(first);
             data[first] = x;
         }
+        // Wenn Stack nicht leer, increase aufrufen, um es eventuell zu vergrößern und Platz zu schaffen.
+        // Dann first einen runter setzen und x einfügen.
         else{
             increase();
             setFirst((first - 1) % data.length);
@@ -103,11 +106,14 @@ public class SymmetricStack {
     }
 
     public void append(int x) {
+        // Wenn Stack leer, dann first und last neu setzen und x an dieser Stelle einfügen
         if (isEmpty()){
             setFirst(data.length / 2);
             setLast(first);
             data[last] = x;
         }
+        // Wenn Stack nicht leer, increase aufrufen, um es eventuell zu vergrößern und Platz zu schaffen.
+        // Dann last einen rauf setzen und x einfügen.
         else{
             increase();
             setLast((last + 1) % data.length);
@@ -116,9 +122,14 @@ public class SymmetricStack {
     }
 
     public void removeFirst() {
+        // Wenn nur noch ein Element drin ist im Stack, dann ist er danach leer!
+        // Deshalt first und last auf -1 setzen!
         if (getNumberOfElements() == 1){
             setFirst(-1);
+            setLast(-1);
         }
+        // Wenn noch mehr als ein Element enthalten ist dann einfach first einen rauf setzen!
+        // Danach decrease aufrufen, da es vllt verkleinert werden muss (Dieser Test erfolgt in decrease selbst)
         else {
             setFirst((first + 1) % data.length);
             decrease();
@@ -126,9 +137,14 @@ public class SymmetricStack {
     }
 
     public void removeLast() {
+        // Wenn nur noch ein Element drin ist im Stack, dann ist er danach leer!
+        // Deshalt first und last auf -1 setzen!
         if (getNumberOfElements() == 1) {
             setLast(-1);
+            setFirst(-1);
         }
+        // Wenn noch mehr als ein Element enthalten ist dann einfach last einen runter setzen!
+        // Danach decrease aufrufen, da es vllt verkleinert werden muss (Dieser Test erfolgt in decrease selbst)
         else{
             setLast((last - 1) % data.length);
             decrease();
@@ -156,10 +172,23 @@ public class SymmetricStack {
     }
 
     public static void main(String[] args) {
-        SymmetricStack ss = new SymmetricStack();
-        ss.setData(new int[]{1,-1,-1,-1,-1,-1,-1,-1,-1,10});
-        ss.setFirst(9);
-        ss.setLast(0);
-        System.out.println(ss.getNumberOfElements());
+        SymmetricStack testStack = new SymmetricStack();
+        System.out.println(testStack);
+        testStack.append(42);
+        testStack.append(17);
+        testStack.prepend(1337);
+        testStack.append(1);
+        testStack.append(2);
+        testStack.append(3);
+        testStack.append(4);
+        testStack.append(5);
+        testStack.append(6);
+        testStack.append(7);
+        testStack.prepend(123);
+        System.out.println(testStack);
+        testStack.removeLast();
+        System.out.println(testStack);
+        testStack.append(543);
+        System.out.println(testStack);
     }
 }

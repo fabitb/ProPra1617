@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="782278a3-d8cb-4c06-9099-2847fd28264c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProPra1617.iml" afterPath="$PROJECT_DIR$/ProPra1617.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blatt08/SymmetricStack.java" afterPath="$PROJECT_DIR$/src/Blatt08/SymmetricStack.java" />
     </list>
     <ignored path="ProPra1617.iws" />
@@ -25,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SymmetricStack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SymmetricStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blatt08/SymmetricStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="645">
+              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding>
                 <element signature="method#SymmetricStack#0;class#SymmetricStack#0" expanded="false" />
                 <element signature="method#getNumberOfElements#0;class#SymmetricStack#0" expanded="false" />
@@ -42,6 +43,16 @@
                 <element signature="method#toString#0;class#SymmetricStack#0" expanded="false" />
                 <element signature="method#main#0;class#SymmetricStack#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MiniJava.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Blatt08/MiniJava.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,6 +74,7 @@
       <list>
         <option value="Singleton" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -82,6 +94,8 @@
         <option value="$PROJECT_DIR$/src/Blatt08/pgdp/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/Blatt08/pgdp/Bank.java" />
         <option value="$PROJECT_DIR$/src/Blatt08/SymmetricStack.java" />
+        <option value="$PROJECT_DIR$/src/Blatt08/TestSymmetricStack.java" />
+        <option value="$PROJECT_DIR$/src/Blatt08/TestSymmetricStackTest.java" />
       </list>
     </option>
   </component>
@@ -120,9 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,6 +208,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,10 +218,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GAD" />
     <property name="FullScreen" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Blatt08" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\Fabian\Developer\IntelliJ\ProPra1617\src\Blatt08" />
     </key>
@@ -699,11 +720,13 @@
       <workItem from="1481724784528" duration="93000" />
       <workItem from="1481729614749" duration="105000" />
       <workItem from="1481736221631" duration="178000" />
+      <workItem from="1481851267477" duration="289000" />
+      <workItem from="1481883671244" duration="1659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12904000" />
+    <option name="totallyTimeSpent" value="14852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -758,6 +781,60 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/SymmetricStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#SymmetricStack#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#getNumberOfElements#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#increase#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#decrease#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#prepend#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#append#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#removeFirst#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#removeLast#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#toString#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#main#0;class#SymmetricStack#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/pgdp/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/SymmetricStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#SymmetricStack#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#getNumberOfElements#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#increase#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#decrease#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#prepend#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#append#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#removeFirst#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#removeLast#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#toString#0;class#SymmetricStack#0" expanded="false" />
+            <element signature="method#main#0;class#SymmetricStack#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/pgdp/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blatt08/SymmetricStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1003,13 +1080,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blatt08/j.java" />
-    <entry file="file://$PROJECT_DIR$/src/Blatt08/MiniJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blatt08/pgdp/Money.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1032,10 +1102,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/TestSymmetricStackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/TestSymmetricStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blatt08/SymmetricStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state relative-caret-position="645">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
             <element signature="method#SymmetricStack#0;class#SymmetricStack#0" expanded="false" />
             <element signature="method#getNumberOfElements#0;class#SymmetricStack#0" expanded="false" />
@@ -1048,6 +1134,14 @@
             <element signature="method#toString#0;class#SymmetricStack#0" expanded="false" />
             <element signature="method#main#0;class#SymmetricStack#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blatt08/MiniJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
