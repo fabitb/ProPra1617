@@ -4,31 +4,18 @@ import java.util.Random;
 
 public class Player implements Runnable{
 
-    int choice;
+    // choice speichert, ob der Spieler Schere, Stein oder Papier hat
+    int choice = -1;
+    Random random = new Random();
 
-    public Player(){
-
-        choice = -1;
-
-    }
-
-
-
-
-
-
-
+    // public Methode, damit der Mainthread die Variable choice auslesen kann.
     public int getChoice() throws InterruptedException{
-
         return choice;
     }
 
 
     @Override
     public void run() {
-
-        Random random = new Random();
         choice = random.nextInt(3);
-
     }
 }
