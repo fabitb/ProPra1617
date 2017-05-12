@@ -27,11 +27,4 @@ public class FunctionalCaesar extends MiniJava {
     public static String decrypt(String s, int k) {
         return encrypt(s, -k);
     }
-
-    public static void main(String[] args) {
-        //String input = readString();
-        //int k = read();
-        write(encrypt("Mrn pnvnrwbcnw Jdopjknw bcnuuc Ajyqjnuj", 17));
-        //System.out.println(decrypt("Mfqqt", 5));
-    }
 }

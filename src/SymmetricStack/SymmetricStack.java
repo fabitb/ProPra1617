@@ -1,4 +1,4 @@
-package Blatt08;
+package SymmetricStack;
 
 public class SymmetricStack {
 
@@ -169,26 +169,5 @@ public class SymmetricStack {
                 out += (first == last ? "" : " " + data[i]) + ")";
         }
         return out;
-    }
-
-    public static void main(String[] args) {
-        SymmetricStack testStack = new SymmetricStack();
-        System.out.println(testStack);
-        testStack.append(42);
-        testStack.append(17);
-        testStack.prepend(1337);
-        testStack.append(1);
-        testStack.append(2);
-        testStack.append(3);
-        testStack.append(4);
-        testStack.append(5);
-        testStack.append(6);
-        testStack.append(7);
-        testStack.prepend(123);
-        System.out.println(testStack);
-        testStack.removeLast();
-        System.out.println(testStack);
-        testStack.append(543);
-        System.out.println(testStack);
     }
 }

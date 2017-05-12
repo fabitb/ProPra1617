@@ -160,18 +160,6 @@ public class HeadList {
         return out;
     }
 
-    public static void main(String[] args) {
-        HeadList l = new HeadList();
-        l.addInOneMethod(1);
-        l.addInOneMethod(2);
-        l.addInOneMethod(3);
-        System.out.println(l);
-        l.removeInOneMethod(2);
-        l.removeInOneMethod(1);
-        l.removeInOneMethod(0);
-        System.out.println(l);
-    }
-
     class Entry {
 
         Entry first;

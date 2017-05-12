@@ -1,4 +1,4 @@
-package Blatt08;
+package SymmetricStack;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
